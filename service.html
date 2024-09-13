@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <script
+      src="https://kit.fontawesome.com/d0d80828e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(formimage.png);
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fff;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: transparent;
+        animation: fadeIn 2s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(159, 66, 66);
+        font-size: 1.02rem;
+      }
+      main hr {
+        border: 0;
+        background: rgb(22, 22, 22);
+        height: 1px;
+        margin: 40px 84px;
+      }
+     
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        padding: 2% 8%;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        margin-top: 20px;
+        animation: fadeIn 2s ease-in-out;
+      }
+      .container h1 {
+        text-align: center;
+        padding: 1%;
+        margin-bottom: 60px;
+        font-weight: 600;
+        position: relative;
+        font-size: 2.5rem;
+      }
+      .container h1::after {
+        content: "";
+        background: #121213;
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .container .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 25px;
+      }
+      .service {
+        text-align: center;
+        padding: 25px 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.2);
+        transition: transform 0.5s, background 0.5s, box-shadow 0.5s;
+        color: #fff;
+        animation: slideUp 1s ease-in-out;
+      }
+      .service img {
+        height: 60px;
+        margin-bottom: 10px;
+      }
+      .service h2 {
+        font-weight: 600;
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+      }
+      .service:hover {
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      }
+      footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      footer .footer h3 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      footer .footer ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+      footer .footer ul li {
+        margin: 0 15px;
+      }
+      footer .footer ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      footer .footer ul li a:hover {
+        color: #723333;
+      }
+      .footer-rights {
+        color: #ccc;
+        font-size: 0.9rem;
+        margin-top: 10px;
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin: 0 15px;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideUp {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+       
+        <div class="right">
+          <ul>
+            <li><a href="/"><img src="home_262584.png" height="20px" width="20px" alt=""></a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contactform.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Our Services</h1>
+      <div class="row">
+        <div class="service">
+          <img src="Mern-Stake Developer.gif" height="50px" alt="Web Design" />
+          <h2>Web Designer</h2>
+          <p>I am a passionate Web Developer</p>
+        </div>
+        <div class="service">
+          <img src="travelcamera.gif" height="50px" alt="Photographer" />
+          <h2>Photographer</h2>
+          <p>I am a street photographer</p>
+        </div>
+        <div class="service">
+          <img src="poet.gif" height="50px" alt="Poet" />
+          <h2>Poet</h2>
+          <p>I am a poetry writer</p>
+        </div>
+        <div class="service">
+          <img
+            src="servicedeveloper.gif"
+            height="50px"
+            alt="Mern-Stake Developer"
+          />
+          <h2>Mern-Stake Developer</h2>
+          <p>Currently i am learning Mern-Stake</p>
+        </div>
+        <div class="service">
+          <img src="editor.gif" height="50px" alt="Editor" />
+          <h2>Editor</h2>
+          <p>I am modrate video and photo editor</p>
+        </div>
+        <div class="service">
+          <img src="management.gif" height="50px" alt="Management Skills" />
+          <h2>Management Skills</h2>
+          <p>
+            I have past experience in event planning and I have contributed in
+            event which has world record of london
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <h3>Priyank's Portfolio</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/service.html">My Skills</a></li>
+          <li><a href="/contactform.html">Contact Us</a></li>
+        </ul>
+        <div class="footer-rights">
+          www.priyankportfolio.com | bhadouriyapriyank7@gmail.com
+        </div>
+        <div>
+          <a href="https://www.facebook.com/Priyank922" class="icon facebook">
+            <img src="facebook_2504903.png" height="25px" width="25px" alt=""
+          /></a>
+          <a href="https://x.com/priyank698" class="icon twitter"
+            ><img src="twitter_168802.png" height="25px" width="25px" alt=""
+          /></a>
+          <a
+            href="https://www.instagram.com/__.__priyank__.__/"
+            class="Instagram"
+            ><img src="instagram_2111463.png" height="25px" width="25px" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/priyank-bhadouriya-23899b206/"
+            class="icon linkedin"
+            ><img src="linkedin_3991775.png" height="25px" width="25px" alt=""
+          /></a>
+          <a href="https://github.com/Priyank922" class="icon github"
+            ><img src="github_3291667.png" height="25px" width="25px" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Photographer",
+          "Software Engineer",
+          "Poet",
+          "Consultant",
+          "SEO Specialist",
+          "Graphic Designer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>

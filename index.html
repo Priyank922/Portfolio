@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+        background-image: url(homepageimage.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+      }
+      nav {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: transparent;
+        animation: fadeIn 2s ease-in-out;
+        background-color: #fffbfb06;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(159, 66, 66);
+        font-size: 1.02rem;
+      }
+      .dropbtn {
+  background-color: #fffbfb06;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: black;
+
+}
+
+.dropdown {
+  
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #6333333e;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: black;}
+
+.show {display: block;}
+      main hr {
+        border: 0;
+        background: rgb(14, 14, 20);
+        height: 1px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+        font-family: Arial;
+        animation-name: slideInRight;
+        animation-duration: 4s;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        animation-delay: 1s;
+        animation-iteration-count:var(1);
+        animation-fill-mode: none;
+        animation-direction: reverse;
+      }
+      @keyframes slideInRight {
+        from {
+          transform: translateX(-500px);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 110px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 3rem;
+      }
+      .leftsection .btn {
+        padding: 12px;
+        background: #0e0e0f;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: rgb(163, 62, 62);
+        color: #000;
+      }
+      .rightsection img {
+        height: 100%;
+        width: 100%;
+        margin: 100px 0;
+      }
+      .me {
+        color: rgb(213, 236, 166);
+      }
+      #element {
+        color: rgb(213, 236, 166);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection {
+        font-size: 1.8rem;
+      }
+      .text-gray {
+        color: rgb(116, 59, 59);
+      }
+      .secondSection .box {
+        background: rgb(146, 65, 65);
+        width: 100vw;
+        height: 3px;
+        margin: 70px 0;
+        margin-left: -13%;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: rgb(184, 99, 99);
+        margin: 0 132px;
+      }
+      .image-top {
+        width: 50px;
+        position: relative;
+        top: -53px;
+        left: -14px;
+      }
+      .image-two {
+        width: 50px;
+        position: relative;
+        top: -53px;
+        left: -14px;
+      }
+      .image-three {
+        width: 50px;
+        position: relative;
+        top: -53px;
+        left: -14px;
+      }
+      .image-four {
+        width: 50px;
+        position: relative;
+        top: -53px;
+        left: -14px;
+      }
+      .image-five {
+        width: 50px;
+        position: relative;
+        top: -53px;
+        left: -14px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 70px;
+        color: rgb(202, 224, 140);
+        width: 190px;
+        font-size: 18px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 60px;
+        color: #faf6f6;
+        width: 150px;
+      }
+      footer {
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      footer .footer h3 {
+        color: #fff;
+      }
+      footer .footer ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+      footer .footer ul li {
+        margin: 0 15px;
+      }
+      footer .footer ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      footer .footer ul li a:hover {
+        color: #723333;
+      }
+      .footer-rights {
+        color: #ccc;
+        font-size: 0.9rem;
+        margin-top: 10px;
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin: 0 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Priyank's Portfolio</div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">MORE</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="about.html">About</a>
+            <a href="contactform.html">Contact</a>
+            <a href="service.html">MY-Skills</a>
+          </div>
+        </div>
+        
+        <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div>Hi, My name is <span class="me">Priyank</span></div>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button
+              onclick="location.href='Priyank_Bhadouriya_Resume.pdf'"
+              class="btn">
+              View Resume
+            </button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="homegif.gif" alt="Web Developer" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="programmer_4260937.png"
+              alt="Developer"
+            />
+            <div class="vertical-title">Web Developer</div>
+            <div class="vertical-desc">
+              I am currently learning Web Development, and I have developed some
+              websites like (Netflix Homepage, My Portfolio Website).
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-two" src="camera (1).png" alt="Photographer" />
+            <div class="vertical-title">Photographer</div>
+            <div class="vertical-desc">
+              I am a street Photographer and I have been a part of the official
+              Photography club in my college and I have an Instagram page also
+              for my photographic content.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-three"
+              src="software.png"
+              alt="Mern Stack Developer"
+            />
+            <div class="vertical-title">Mern Stack Developer</div>
+            <div class="vertical-desc">Currently I am learning MERN.</div>
+          </div>
+          <div class="vertical">
+            <img class="image-four" src="poetry (1).png" alt="Poet" />
+            <div class="vertical-title">Poet</div>
+            <div class="vertical-desc">
+              Poetry is my hobby and since 2019 I have started writing and I
+              have also performed in IIT Indore in 2022 in their fest called
+              Fluxus.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-five" src="illustration.png" alt="Poet" />
+            <div class="vertical-title">Editor</div>
+            <div class="vertical-desc">I am modrate video and photo editor</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <h3>Priyank's Portfolio</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/service.html">My Skills</a></li>
+          <li><a href="/contactform.html">Contact Us</a></li>
+        </ul>
+        <div class="footer-rights">
+          www.priyankportfolio.com | bhadouriyapriyank7@gmail.com
+        </div>
+        <div>
+          <a href="https://www.facebook.com/Priyank922" class="icon facebook">
+            <img src="facebook_2504903.png" height="25px" width="25px" alt=""
+          /></a>
+          <a href="https://x.com/priyank698" class="icon twitter"
+            ><img src="twitter_168802.png" height="25px" width="25px" alt=""
+          /></a>
+          <a
+            href="https://www.instagram.com/__.__priyank__.__/"
+            class="Instagram"
+            ><img src="instagram_2111463.png" height="25px" width="25px" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/priyank-bhadouriya-23899b206/"
+            class="icon linkedin"
+            ><img src="linkedin_3991775.png" height="25px" width="25px" alt=""
+          /></a>
+          <a href="https://github.com/Priyank922" class="icon github"
+            ><img src="github_3291667.png" height="25px" width="25px" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Photographer",
+          "Mern Stack Developer",
+          "Poet",
+        ],
+        typeSpeed: 200,
+      });
+    </script>
+  </body>
+</html>
